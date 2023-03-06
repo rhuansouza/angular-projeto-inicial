@@ -1,0 +1,26 @@
+<p>data-biding works! {{nome}}</p>
+
+
+<h2>Property Binding</h2>
+
+<button [disabled]="checkDisabled">Button</button>
+
+<br>
+<h1>Event Biding</h1>
+<br>
+<button (click)="alertaInfo($event)">Evento</button>
+
+<div (mousemove)="mouseMoveTeste($event)" style="background:red;width: 300px; height: 300px;"></div>
+
+{{ position.x }} - {{ position.y }}
+<br>
+<br>
+<hr>
+<br>
+<h2>Two-way biding</h2>
+
+<br>
+<br>
+<input [(ngModel)]="nome">
+{{nome}}
+<hr>

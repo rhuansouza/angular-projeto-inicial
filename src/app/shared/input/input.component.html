@@ -1,0 +1,9 @@
+<h1 *ngFor="let item of dados">Nome: {{item.nome}} - Idade {{item.idade}}</h1>
+<input [(ngModel)]="nome">
+<br>
+<br>
+<input [(ngModel)]="idade">
+<p>Contador {{contador}}</p>
+
+<br>
+<button (click)="adicionarAnalista()">Adicionar Analista</button>
